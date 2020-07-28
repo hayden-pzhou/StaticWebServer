@@ -8,7 +8,7 @@ endif ()
 set(CXX_FLAGS
         -g
         -Wall
-        -std=c++17
+        -std=c++14
         -D_PTHREADS
         -Wno-unused-parameter)
 # set(CMAKE_CXX_COMPILER "g++")
