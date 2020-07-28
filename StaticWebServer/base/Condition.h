@@ -4,8 +4,8 @@
 
 #ifndef STATICWEBSERVER_CONDITION_H
 #define STATICWEBSERVER_CONDITION_H
-#include <common.h>
-#include <MutexLock.h>
+#include "common.h"
+#include "MutexLock.h"
 
 class Condition :noncopyable{
 public:
@@ -13,7 +13,7 @@ public:
         pthread_cond_init(&cond, nullptr);
     }
     ~Condition(){pthread_cond_destroy(&cond);}
-    void wait() {pthread_cond_wait(&cond,mutex.get();)} //友元直接可以访问
+    void wait() {pthread_cond_wait(&cond,mutex.get());} //友元直接可以访问
     void notify(){pthread_cond_signal(&cond);}
     void notifyall(){pthread_cond_broadcast(&cond);}
     bool waitForSeconds(int seconds){

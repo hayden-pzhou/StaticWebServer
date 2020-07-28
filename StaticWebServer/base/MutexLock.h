@@ -4,19 +4,19 @@
 
 #ifndef STATICWEBSERVER_MUTEXLOCK_H
 #define STATICWEBSERVER_MUTEXLOCK_H
-#include <common.h>
+#include "common.h"
 #include <cstdio>
 
 class MutexLock : noncopyable{
 public:
-    MutexLock(){pthread_mutex_init(&mutex, nullptr)} //初始化一把锁
+    MutexLock(){pthread_mutex_init(&mutex, nullptr);} //初始化一把锁
     ~MutexLock(){
         pthread_mutex_lock(&mutex);
         pthread_mutex_destroy(&mutex);
     }
     void lock(){pthread_mutex_lock(&mutex);}
     void unlock(){pthread_mutex_unlock(&mutex);}
-    pthread_mutex_t * get(){return &mutex}
+    pthread_mutex_t * get(){return &mutex;}
 
 private:
     pthread_mutex_t mutex;

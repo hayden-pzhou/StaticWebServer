@@ -4,7 +4,7 @@
 
 #ifndef STATICWEBSERVER_THREAD_H
 #define STATICWEBSERVER_THREAD_H
-#include <common.h>
+#include "common.h"
 #include "CountDownLatch.h"
 
 class Thread : noncopyable {
@@ -12,7 +12,7 @@ public:
     typedef std::function<void()> ThreadFunc;
     explicit Thread(const ThreadFunc& func, const std::string& name = std::string());
     ~Thread();
-    void start;
+    void start();
     void join();
     bool started() const {return started_;}
     pid_t tid() const {return tid_;}
