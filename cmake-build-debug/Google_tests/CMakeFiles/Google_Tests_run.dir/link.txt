@@ -1,0 +1,1 @@
+/usr/bin/g++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Google_Tests_run.dir/ConverterTests.cpp.o CMakeFiles/Google_Tests_run.dir/AbsoluteDateTest.cpp.o  -o Google_Tests_run  ../lib/libgtestd.a ../lib/libgtest_maind.a ../lib/libgtestd.a 
