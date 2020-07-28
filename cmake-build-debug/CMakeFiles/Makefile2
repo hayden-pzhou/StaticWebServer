@@ -53,18 +53,19 @@ CMAKE_BINARY_DIR = /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-de
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/StaticWebServer.dir/all
+all: StaticWebServer/all
 all: Google_tests/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: StaticWebServer/preinstall
 preinstall: Google_tests/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/StaticWebServer.dir/clean
+clean: StaticWebServer/clean
 clean: Google_tests/clean
 
 .PHONY : clean
@@ -150,31 +151,114 @@ Google_tests/lib/googletest/clean: Google_tests/lib/googletest/CMakeFiles/gtest.
 .PHONY : Google_tests/lib/googletest/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/StaticWebServer.dir
+# Directory level rules for directory StaticWebServer
+
+# Recursive "all" directory target.
+StaticWebServer/all: StaticWebServer/base/all
+
+.PHONY : StaticWebServer/all
+
+# Recursive "preinstall" directory target.
+StaticWebServer/preinstall: StaticWebServer/base/preinstall
+
+.PHONY : StaticWebServer/preinstall
+
+# Recursive "clean" directory target.
+StaticWebServer/clean: StaticWebServer/base/clean
+
+.PHONY : StaticWebServer/clean
+
+#=============================================================================
+# Directory level rules for directory StaticWebServer/base
+
+# Recursive "all" directory target.
+StaticWebServer/base/all: StaticWebServer/base/CMakeFiles/libserver_base.dir/all
+StaticWebServer/base/all: StaticWebServer/base/tests/all
+
+.PHONY : StaticWebServer/base/all
+
+# Recursive "preinstall" directory target.
+StaticWebServer/base/preinstall: StaticWebServer/base/tests/preinstall
+
+.PHONY : StaticWebServer/base/preinstall
+
+# Recursive "clean" directory target.
+StaticWebServer/base/clean: StaticWebServer/base/CMakeFiles/libserver_base.dir/clean
+StaticWebServer/base/clean: StaticWebServer/base/tests/clean
+
+.PHONY : StaticWebServer/base/clean
+
+#=============================================================================
+# Directory level rules for directory StaticWebServer/base/tests
+
+# Recursive "all" directory target.
+StaticWebServer/base/tests/all: StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all
+
+.PHONY : StaticWebServer/base/tests/all
+
+# Recursive "preinstall" directory target.
+StaticWebServer/base/tests/preinstall:
+
+.PHONY : StaticWebServer/base/tests/preinstall
+
+# Recursive "clean" directory target.
+StaticWebServer/base/tests/clean: StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean
+
+.PHONY : StaticWebServer/base/tests/clean
+
+#=============================================================================
+# Target rules for target StaticWebServer/base/CMakeFiles/libserver_base.dir
 
 # All Build rule for target.
-CMakeFiles/StaticWebServer.dir/all:
-	$(MAKE) -f CMakeFiles/StaticWebServer.dir/build.make CMakeFiles/StaticWebServer.dir/depend
-	$(MAKE) -f CMakeFiles/StaticWebServer.dir/build.make CMakeFiles/StaticWebServer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target StaticWebServer"
-.PHONY : CMakeFiles/StaticWebServer.dir/all
+StaticWebServer/base/CMakeFiles/libserver_base.dir/all:
+	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/depend
+	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target libserver_base"
+.PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/StaticWebServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StaticWebServer.dir/all
+StaticWebServer/base/CMakeFiles/libserver_base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/CMakeFiles/libserver_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/StaticWebServer.dir/rule
+.PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/rule
 
 # Convenience name for target.
-StaticWebServer: CMakeFiles/StaticWebServer.dir/rule
+libserver_base: StaticWebServer/base/CMakeFiles/libserver_base.dir/rule
 
-.PHONY : StaticWebServer
+.PHONY : libserver_base
 
 # clean rule for target.
-CMakeFiles/StaticWebServer.dir/clean:
-	$(MAKE) -f CMakeFiles/StaticWebServer.dir/build.make CMakeFiles/StaticWebServer.dir/clean
-.PHONY : CMakeFiles/StaticWebServer.dir/clean
+StaticWebServer/base/CMakeFiles/libserver_base.dir/clean:
+	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/clean
+.PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/clean
+
+#=============================================================================
+# Target rules for target StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir
+
+# All Build rule for target.
+StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all: StaticWebServer/base/CMakeFiles/libserver_base.dir/all
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/depend
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target ThreadTest"
+.PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all
+
+# Build rule for subdir invocation for target.
+StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
+.PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule
+
+# Convenience name for target.
+ThreadTest: StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule
+
+.PHONY : ThreadTest
+
+# clean rule for target.
+StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean:
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean
+.PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean
 
 #=============================================================================
 # Target rules for target Google_tests/CMakeFiles/Google_Tests_run.dir

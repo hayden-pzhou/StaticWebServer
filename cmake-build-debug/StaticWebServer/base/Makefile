@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/progress.marks
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,109 +143,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named libserver_base
+# Convenience name for target.
+StaticWebServer/base/CMakeFiles/libserver_base.dir/rule:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/CMakeFiles/libserver_base.dir/rule
+.PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/rule
 
-# Build rule for target.
-libserver_base: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libserver_base
+# Convenience name for target.
+libserver_base: StaticWebServer/base/CMakeFiles/libserver_base.dir/rule
+
 .PHONY : libserver_base
 
 # fast build rule for target.
 libserver_base/fast:
-	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/build
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/build
 .PHONY : libserver_base/fast
 
-#=============================================================================
-# Target rules for targets named ThreadTest
+CountDownLatch.o: CountDownLatch.cpp.o
 
-# Build rule for target.
-ThreadTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ThreadTest
-.PHONY : ThreadTest
+.PHONY : CountDownLatch.o
 
-# fast build rule for target.
-ThreadTest/fast:
-	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build
-.PHONY : ThreadTest/fast
+# target to build an object file
+CountDownLatch.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o
+.PHONY : CountDownLatch.cpp.o
 
-#=============================================================================
-# Target rules for targets named Google_Tests_run
+CountDownLatch.i: CountDownLatch.cpp.i
 
-# Build rule for target.
-Google_Tests_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Google_Tests_run
-.PHONY : Google_Tests_run
+.PHONY : CountDownLatch.i
 
-# fast build rule for target.
-Google_Tests_run/fast:
-	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
-.PHONY : Google_Tests_run/fast
+# target to preprocess a source file
+CountDownLatch.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.i
+.PHONY : CountDownLatch.cpp.i
 
-#=============================================================================
-# Target rules for targets named gmock
+CountDownLatch.s: CountDownLatch.cpp.s
 
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
+.PHONY : CountDownLatch.s
 
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
+# target to generate assembly for a file
+CountDownLatch.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.s
+.PHONY : CountDownLatch.cpp.s
 
-#=============================================================================
-# Target rules for targets named gmock_main
+Thread.o: Thread.cpp.o
 
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
+.PHONY : Thread.o
 
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
+# target to build an object file
+Thread.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/Thread.cpp.o
+.PHONY : Thread.cpp.o
 
-#=============================================================================
-# Target rules for targets named gtest_main
+Thread.i: Thread.cpp.i
 
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
+.PHONY : Thread.i
 
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
+# target to preprocess a source file
+Thread.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/Thread.cpp.i
+.PHONY : Thread.cpp.i
 
-#=============================================================================
-# Target rules for targets named gtest
+Thread.s: Thread.cpp.s
 
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
+.PHONY : Thread.s
 
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
+# target to generate assembly for a file
+Thread.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/Thread.cpp.s
+.PHONY : Thread.cpp.s
 
 # Help Target
 help:
@@ -260,12 +238,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... libserver_base"
-	@echo "... ThreadTest"
-	@echo "... Google_Tests_run"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest_main"
-	@echo "... gtest"
+	@echo "... CountDownLatch.o"
+	@echo "... CountDownLatch.i"
+	@echo "... CountDownLatch.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
 .PHONY : help
 
 
@@ -277,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

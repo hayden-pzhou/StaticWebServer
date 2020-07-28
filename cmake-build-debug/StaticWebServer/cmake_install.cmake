@@ -1,4 +1,4 @@
-# Install script for directory: /Users/hymanzhou/CLionProjects/StaticWebServer
+# Install script for directory: /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,21 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/cmake_install.cmake")
+  include("/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/cmake_install.cmake")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/cmake_install.cmake")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

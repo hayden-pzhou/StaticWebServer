@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Condition.h
+common.h
+-
+MutexLock.h
+-
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/CountDownLatch.cpp
+CountDownLatch.h
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/CountDownLatch.h
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/CountDownLatch.h
+Condition.h
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Condition.h
+MutexLock.h
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/MutexLock.h
+noncopyable.h
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/noncopyable.h
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/MutexLock.h
+common.h
+-
+cstdio
+-
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Thread.cpp
+Thread.h
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Thread.h
+iostream
+-
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Thread.h
+common.h
+-
+CountDownLatch.h
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/CountDownLatch.h
+
+/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/noncopyable.h
+

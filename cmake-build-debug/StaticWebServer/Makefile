@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/CMakeFiles/progress.marks
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,109 +143,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named libserver_base
-
-# Build rule for target.
-libserver_base: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libserver_base
-.PHONY : libserver_base
-
-# fast build rule for target.
-libserver_base/fast:
-	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/build
-.PHONY : libserver_base/fast
-
-#=============================================================================
-# Target rules for targets named ThreadTest
-
-# Build rule for target.
-ThreadTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ThreadTest
-.PHONY : ThreadTest
-
-# fast build rule for target.
-ThreadTest/fast:
-	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build
-.PHONY : ThreadTest/fast
-
-#=============================================================================
-# Target rules for targets named Google_Tests_run
-
-# Build rule for target.
-Google_Tests_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Google_Tests_run
-.PHONY : Google_Tests_run
-
-# fast build rule for target.
-Google_Tests_run/fast:
-	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
-.PHONY : Google_Tests_run/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
 
 # Help Target
 help:
@@ -259,13 +168,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... libserver_base"
-	@echo "... ThreadTest"
-	@echo "... Google_Tests_run"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest_main"
-	@echo "... gtest"
 .PHONY : help
 
 
@@ -277,6 +179,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
