@@ -1,0 +1,3 @@
+/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles/StaticWebServer.dir
