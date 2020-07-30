@@ -3,6 +3,7 @@
 //
 
 #include "Thread.h"
+#include "CurrentThread.h"
 
 #include <iostream>
 using namespace std;

@@ -83,19 +83,94 @@ StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libserver_base.dir/CountDownLatch.cpp.s"
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/CountDownLatch.cpp -o CMakeFiles/libserver_base.dir/CountDownLatch.cpp.s
 
+StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o: StaticWebServer/base/CMakeFiles/libserver_base.dir/flags.make
+StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o: ../StaticWebServer/base/AsyncLogging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o -c /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/AsyncLogging.cpp
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libserver_base.dir/AsyncLogging.cpp.i"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/AsyncLogging.cpp > CMakeFiles/libserver_base.dir/AsyncLogging.cpp.i
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libserver_base.dir/AsyncLogging.cpp.s"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/AsyncLogging.cpp -o CMakeFiles/libserver_base.dir/AsyncLogging.cpp.s
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.o: StaticWebServer/base/CMakeFiles/libserver_base.dir/flags.make
+StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.o: ../StaticWebServer/base/FileUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.o"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libserver_base.dir/FileUtil.cpp.o -c /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/FileUtil.cpp
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libserver_base.dir/FileUtil.cpp.i"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/FileUtil.cpp > CMakeFiles/libserver_base.dir/FileUtil.cpp.i
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libserver_base.dir/FileUtil.cpp.s"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/FileUtil.cpp -o CMakeFiles/libserver_base.dir/FileUtil.cpp.s
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.o: StaticWebServer/base/CMakeFiles/libserver_base.dir/flags.make
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.o: ../StaticWebServer/base/LogFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.o"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libserver_base.dir/LogFile.cpp.o -c /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogFile.cpp
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libserver_base.dir/LogFile.cpp.i"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogFile.cpp > CMakeFiles/libserver_base.dir/LogFile.cpp.i
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libserver_base.dir/LogFile.cpp.s"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogFile.cpp -o CMakeFiles/libserver_base.dir/LogFile.cpp.s
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.o: StaticWebServer/base/CMakeFiles/libserver_base.dir/flags.make
+StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.o: ../StaticWebServer/base/Logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.o"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libserver_base.dir/Logging.cpp.o -c /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Logging.cpp
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libserver_base.dir/Logging.cpp.i"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Logging.cpp > CMakeFiles/libserver_base.dir/Logging.cpp.i
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libserver_base.dir/Logging.cpp.s"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Logging.cpp -o CMakeFiles/libserver_base.dir/Logging.cpp.s
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.o: StaticWebServer/base/CMakeFiles/libserver_base.dir/flags.make
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.o: ../StaticWebServer/base/LogStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.o"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libserver_base.dir/LogStream.cpp.o -c /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogStream.cpp
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libserver_base.dir/LogStream.cpp.i"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogStream.cpp > CMakeFiles/libserver_base.dir/LogStream.cpp.i
+
+StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libserver_base.dir/LogStream.cpp.s"
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogStream.cpp -o CMakeFiles/libserver_base.dir/LogStream.cpp.s
+
 # Object files for target libserver_base
 libserver_base_OBJECTS = \
 "CMakeFiles/libserver_base.dir/Thread.cpp.o" \
-"CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o"
+"CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o" \
+"CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o" \
+"CMakeFiles/libserver_base.dir/FileUtil.cpp.o" \
+"CMakeFiles/libserver_base.dir/LogFile.cpp.o" \
+"CMakeFiles/libserver_base.dir/Logging.cpp.o" \
+"CMakeFiles/libserver_base.dir/LogStream.cpp.o"
 
 # External object files for target libserver_base
 libserver_base_EXTERNAL_OBJECTS =
 
 StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/Thread.cpp.o
 StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o
+StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o
+StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.o
+StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.o
+StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.o
+StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.o
 StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make
 StaticWebServer/base/libserver_base.a: StaticWebServer/base/CMakeFiles/libserver_base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libserver_base.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libserver_base.a"
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && $(CMAKE_COMMAND) -P CMakeFiles/libserver_base.dir/cmake_clean_target.cmake
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libserver_base.dir/link.txt --verbose=$(VERBOSE)
 

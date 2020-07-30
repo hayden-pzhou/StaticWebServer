@@ -1,2 +1,5 @@
 add_executable(ThreadTest ThreadTest.cpp)
 target_link_libraries(ThreadTest libserver_base)
+
+add_executable(LoggingTest LoggingTest.cpp)
+target_link_libraries(LoggingTest libserver_base)

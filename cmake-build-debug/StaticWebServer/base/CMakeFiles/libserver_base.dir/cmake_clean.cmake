@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o"
   "CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o"
+  "CMakeFiles/libserver_base.dir/FileUtil.cpp.o"
+  "CMakeFiles/libserver_base.dir/LogFile.cpp.o"
+  "CMakeFiles/libserver_base.dir/LogStream.cpp.o"
+  "CMakeFiles/libserver_base.dir/Logging.cpp.o"
   "CMakeFiles/libserver_base.dir/Thread.cpp.o"
   "libserver_base.a"
   "libserver_base.pdb"

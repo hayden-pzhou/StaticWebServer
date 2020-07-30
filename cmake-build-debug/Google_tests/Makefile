@@ -156,75 +156,6 @@ depend:
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-Google_tests/CMakeFiles/Google_Tests_run.dir/rule:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 Google_tests/CMakeFiles/Google_Tests_run.dir/rule
-.PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/rule
-
-# Convenience name for target.
-Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/rule
-
-.PHONY : Google_Tests_run
-
-# fast build rule for target.
-Google_Tests_run/fast:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
-.PHONY : Google_Tests_run/fast
-
-AbsoluteDateTest.o: AbsoluteDateTest.cpp.o
-
-.PHONY : AbsoluteDateTest.o
-
-# target to build an object file
-AbsoluteDateTest.cpp.o:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/AbsoluteDateTest.cpp.o
-.PHONY : AbsoluteDateTest.cpp.o
-
-AbsoluteDateTest.i: AbsoluteDateTest.cpp.i
-
-.PHONY : AbsoluteDateTest.i
-
-# target to preprocess a source file
-AbsoluteDateTest.cpp.i:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/AbsoluteDateTest.cpp.i
-.PHONY : AbsoluteDateTest.cpp.i
-
-AbsoluteDateTest.s: AbsoluteDateTest.cpp.s
-
-.PHONY : AbsoluteDateTest.s
-
-# target to generate assembly for a file
-AbsoluteDateTest.cpp.s:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/AbsoluteDateTest.cpp.s
-.PHONY : AbsoluteDateTest.cpp.s
-
-ConverterTests.o: ConverterTests.cpp.o
-
-.PHONY : ConverterTests.o
-
-# target to build an object file
-ConverterTests.cpp.o:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/ConverterTests.cpp.o
-.PHONY : ConverterTests.cpp.o
-
-ConverterTests.i: ConverterTests.cpp.i
-
-.PHONY : ConverterTests.i
-
-# target to preprocess a source file
-ConverterTests.cpp.i:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/ConverterTests.cpp.i
-.PHONY : ConverterTests.cpp.i
-
-ConverterTests.s: ConverterTests.cpp.s
-
-.PHONY : ConverterTests.s
-
-# target to generate assembly for a file
-ConverterTests.cpp.s:
-	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/ConverterTests.cpp.s
-.PHONY : ConverterTests.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,13 +168,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Google_Tests_run"
-	@echo "... AbsoluteDateTest.o"
-	@echo "... AbsoluteDateTest.i"
-	@echo "... AbsoluteDateTest.s"
-	@echo "... ConverterTests.o"
-	@echo "... ConverterTests.i"
-	@echo "... ConverterTests.s"
 .PHONY : help
 
 

@@ -13,7 +13,7 @@ public:
     explicit Thread(const ThreadFunc& func, const std::string& name = std::string());
     ~Thread();
     void start();
-    void join();
+    int join();
     bool started() const {return started_;}
     pid_t tid() const {return tid_;}
     const std::string& name() const {return name_;}

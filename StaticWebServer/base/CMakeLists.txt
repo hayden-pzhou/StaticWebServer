@@ -1,6 +1,11 @@
 set(LIB_SRC
         Thread.cpp
-        CountDownLatch.cpp)
+        CountDownLatch.cpp
+        AsyncLogging.cpp
+        FileUtil.cpp
+        LogFile.cpp
+        Logging.cpp
+        LogStream.cpp)
 
 add_library(libserver_base ${LIB_SRC})
 target_link_libraries(libserver_base pthread rt)

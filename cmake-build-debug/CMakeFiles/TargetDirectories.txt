@@ -21,6 +21,7 @@
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/install/strip.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/install.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/list_install_components.dir
+/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/rebuild_cache.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/edit_cache.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir
@@ -30,7 +31,6 @@
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/CMakeFiles/list_install_components.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/CMakeFiles/rebuild_cache.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/CMakeFiles/edit_cache.dir
-/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/CMakeFiles/Google_Tests_run.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/lib/CMakeFiles/install/local.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/lib/CMakeFiles/install/strip.dir
 /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/Google_tests/lib/CMakeFiles/install.dir

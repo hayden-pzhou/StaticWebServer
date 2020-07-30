@@ -18,8 +18,8 @@ void threadFunction(){
 
 int main(){
     shared_ptr<Thread> tmp(new Thread(threadFunction,"testFunc"));
-    tmp->join();
     tmp->start();
+    tmp->join();
     cout << "main thread waiting" << endl;
 }
 

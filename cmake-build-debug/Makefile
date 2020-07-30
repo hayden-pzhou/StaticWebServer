@@ -170,6 +170,19 @@ libserver_base/fast:
 .PHONY : libserver_base/fast
 
 #=============================================================================
+# Target rules for targets named LoggingTest
+
+# Build rule for target.
+LoggingTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LoggingTest
+.PHONY : LoggingTest
+
+# fast build rule for target.
+LoggingTest/fast:
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build
+.PHONY : LoggingTest/fast
+
+#=============================================================================
 # Target rules for targets named ThreadTest
 
 # Build rule for target.
@@ -181,19 +194,6 @@ ThreadTest: cmake_check_build_system
 ThreadTest/fast:
 	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build
 .PHONY : ThreadTest/fast
-
-#=============================================================================
-# Target rules for targets named Google_Tests_run
-
-# Build rule for target.
-Google_Tests_run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Google_Tests_run
-.PHONY : Google_Tests_run
-
-# fast build rule for target.
-Google_Tests_run/fast:
-	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
-.PHONY : Google_Tests_run/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -260,8 +260,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... libserver_base"
+	@echo "... LoggingTest"
 	@echo "... ThreadTest"
-	@echo "... Google_Tests_run"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest_main"

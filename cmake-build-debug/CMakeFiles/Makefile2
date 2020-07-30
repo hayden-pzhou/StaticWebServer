@@ -74,7 +74,6 @@ clean: Google_tests/clean
 # Directory level rules for directory Google_tests
 
 # Recursive "all" directory target.
-Google_tests/all: Google_tests/CMakeFiles/Google_Tests_run.dir/all
 Google_tests/all: Google_tests/lib/all
 
 .PHONY : Google_tests/all
@@ -85,7 +84,6 @@ Google_tests/preinstall: Google_tests/lib/preinstall
 .PHONY : Google_tests/preinstall
 
 # Recursive "clean" directory target.
-Google_tests/clean: Google_tests/CMakeFiles/Google_Tests_run.dir/clean
 Google_tests/clean: Google_tests/lib/clean
 
 .PHONY : Google_tests/clean
@@ -192,6 +190,7 @@ StaticWebServer/base/clean: StaticWebServer/base/tests/clean
 # Directory level rules for directory StaticWebServer/base/tests
 
 # Recursive "all" directory target.
+StaticWebServer/base/tests/all: StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/all
 StaticWebServer/base/tests/all: StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all
 
 .PHONY : StaticWebServer/base/tests/all
@@ -202,6 +201,7 @@ StaticWebServer/base/tests/preinstall:
 .PHONY : StaticWebServer/base/tests/preinstall
 
 # Recursive "clean" directory target.
+StaticWebServer/base/tests/clean: StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/clean
 StaticWebServer/base/tests/clean: StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean
 
 .PHONY : StaticWebServer/base/tests/clean
@@ -213,12 +213,12 @@ StaticWebServer/base/tests/clean: StaticWebServer/base/tests/CMakeFiles/ThreadTe
 StaticWebServer/base/CMakeFiles/libserver_base.dir/all:
 	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/depend
 	$(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=14,15,16 "Built target libserver_base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=13,14,15,16,17,18,19,20 "Built target libserver_base"
 .PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/all
 
 # Build rule for subdir invocation for target.
 StaticWebServer/base/CMakeFiles/libserver_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/CMakeFiles/libserver_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
 .PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/rule
@@ -234,18 +234,45 @@ StaticWebServer/base/CMakeFiles/libserver_base.dir/clean:
 .PHONY : StaticWebServer/base/CMakeFiles/libserver_base.dir/clean
 
 #=============================================================================
+# Target rules for target StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir
+
+# All Build rule for target.
+StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/all: StaticWebServer/base/CMakeFiles/libserver_base.dir/all
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/depend
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LoggingTest"
+.PHONY : StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/all
+
+# Build rule for subdir invocation for target.
+StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
+.PHONY : StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule
+
+# Convenience name for target.
+LoggingTest: StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule
+
+.PHONY : LoggingTest
+
+# clean rule for target.
+StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/clean:
+	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/clean
+.PHONY : StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/clean
+
+#=============================================================================
 # Target rules for target StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir
 
 # All Build rule for target.
 StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all: StaticWebServer/base/CMakeFiles/libserver_base.dir/all
 	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/depend
 	$(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target ThreadTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target ThreadTest"
 .PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all
 
 # Build rule for subdir invocation for target.
 StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
 .PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule
@@ -261,41 +288,13 @@ StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean:
 .PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/clean
 
 #=============================================================================
-# Target rules for target Google_tests/CMakeFiles/Google_Tests_run.dir
-
-# All Build rule for target.
-Google_tests/CMakeFiles/Google_Tests_run.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/all
-Google_tests/CMakeFiles/Google_Tests_run.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/depend
-	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Google_Tests_run"
-.PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/all
-
-# Build rule for subdir invocation for target.
-Google_tests/CMakeFiles/Google_Tests_run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 Google_tests/CMakeFiles/Google_Tests_run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles 0
-.PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/rule
-
-# Convenience name for target.
-Google_Tests_run: Google_tests/CMakeFiles/Google_Tests_run.dir/rule
-
-.PHONY : Google_Tests_run
-
-# clean rule for target.
-Google_tests/CMakeFiles/Google_Tests_run.dir/clean:
-	$(MAKE) -f Google_tests/CMakeFiles/Google_Tests_run.dir/build.make Google_tests/CMakeFiles/Google_Tests_run.dir/clean
-.PHONY : Google_tests/CMakeFiles/Google_Tests_run.dir/clean
-
-#=============================================================================
 # Target rules for target Google_tests/lib/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 Google_tests/lib/googlemock/CMakeFiles/gmock.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : Google_tests/lib/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -323,7 +322,7 @@ Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/all: Google_tests/lib/goog
 Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build.make Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -350,7 +349,7 @@ Google_tests/lib/googlemock/CMakeFiles/gmock_main.dir/clean:
 Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/all: Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -377,7 +376,7 @@ Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/clean:
 Google_tests/lib/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f Google_tests/lib/googletest/CMakeFiles/gtest.dir/build.make Google_tests/lib/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : Google_tests/lib/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

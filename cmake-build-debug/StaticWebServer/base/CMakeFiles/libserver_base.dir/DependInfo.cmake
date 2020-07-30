@@ -4,7 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/AsyncLogging.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o"
   "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/CountDownLatch.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.o"
+  "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/FileUtil.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.o"
+  "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogFile.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.o"
+  "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/LogStream.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.o"
+  "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Logging.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.o"
   "/Users/hymanzhou/CLionProjects/StaticWebServer/StaticWebServer/base/Thread.cpp" "/Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug/StaticWebServer/base/CMakeFiles/libserver_base.dir/Thread.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

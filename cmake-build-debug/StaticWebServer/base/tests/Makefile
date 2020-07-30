@@ -157,6 +157,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule
+.PHONY : StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule
+
+# Convenience name for target.
+LoggingTest: StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/rule
+
+.PHONY : LoggingTest
+
+# fast build rule for target.
+LoggingTest/fast:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build
+.PHONY : LoggingTest/fast
+
+# Convenience name for target.
 StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule:
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule
 .PHONY : StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule
@@ -170,6 +185,33 @@ ThreadTest: StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/rule
 ThreadTest/fast:
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/ThreadTest.dir/build
 .PHONY : ThreadTest/fast
+
+LoggingTest.o: LoggingTest.cpp.o
+
+.PHONY : LoggingTest.o
+
+# target to build an object file
+LoggingTest.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.o
+.PHONY : LoggingTest.cpp.o
+
+LoggingTest.i: LoggingTest.cpp.i
+
+.PHONY : LoggingTest.i
+
+# target to preprocess a source file
+LoggingTest.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.i
+.PHONY : LoggingTest.cpp.i
+
+LoggingTest.s: LoggingTest.cpp.s
+
+.PHONY : LoggingTest.s
+
+# target to generate assembly for a file
+LoggingTest.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/build.make StaticWebServer/base/tests/CMakeFiles/LoggingTest.dir/LoggingTest.cpp.s
+.PHONY : LoggingTest.cpp.s
 
 ThreadTest.o: ThreadTest.cpp.o
 
@@ -208,9 +250,13 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... LoggingTest"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ThreadTest"
+	@echo "... LoggingTest.o"
+	@echo "... LoggingTest.i"
+	@echo "... LoggingTest.s"
 	@echo "... ThreadTest.o"
 	@echo "... ThreadTest.i"
 	@echo "... ThreadTest.s"

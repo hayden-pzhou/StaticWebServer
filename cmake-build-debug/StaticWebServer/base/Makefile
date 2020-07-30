@@ -171,6 +171,33 @@ libserver_base/fast:
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/build
 .PHONY : libserver_base/fast
 
+AsyncLogging.o: AsyncLogging.cpp.o
+
+.PHONY : AsyncLogging.o
+
+# target to build an object file
+AsyncLogging.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.o
+.PHONY : AsyncLogging.cpp.o
+
+AsyncLogging.i: AsyncLogging.cpp.i
+
+.PHONY : AsyncLogging.i
+
+# target to preprocess a source file
+AsyncLogging.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.i
+.PHONY : AsyncLogging.cpp.i
+
+AsyncLogging.s: AsyncLogging.cpp.s
+
+.PHONY : AsyncLogging.s
+
+# target to generate assembly for a file
+AsyncLogging.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/AsyncLogging.cpp.s
+.PHONY : AsyncLogging.cpp.s
+
 CountDownLatch.o: CountDownLatch.cpp.o
 
 .PHONY : CountDownLatch.o
@@ -197,6 +224,114 @@ CountDownLatch.s: CountDownLatch.cpp.s
 CountDownLatch.cpp.s:
 	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/CountDownLatch.cpp.s
 .PHONY : CountDownLatch.cpp.s
+
+FileUtil.o: FileUtil.cpp.o
+
+.PHONY : FileUtil.o
+
+# target to build an object file
+FileUtil.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.o
+.PHONY : FileUtil.cpp.o
+
+FileUtil.i: FileUtil.cpp.i
+
+.PHONY : FileUtil.i
+
+# target to preprocess a source file
+FileUtil.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.i
+.PHONY : FileUtil.cpp.i
+
+FileUtil.s: FileUtil.cpp.s
+
+.PHONY : FileUtil.s
+
+# target to generate assembly for a file
+FileUtil.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/FileUtil.cpp.s
+.PHONY : FileUtil.cpp.s
+
+LogFile.o: LogFile.cpp.o
+
+.PHONY : LogFile.o
+
+# target to build an object file
+LogFile.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.o
+.PHONY : LogFile.cpp.o
+
+LogFile.i: LogFile.cpp.i
+
+.PHONY : LogFile.i
+
+# target to preprocess a source file
+LogFile.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.i
+.PHONY : LogFile.cpp.i
+
+LogFile.s: LogFile.cpp.s
+
+.PHONY : LogFile.s
+
+# target to generate assembly for a file
+LogFile.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/LogFile.cpp.s
+.PHONY : LogFile.cpp.s
+
+LogStream.o: LogStream.cpp.o
+
+.PHONY : LogStream.o
+
+# target to build an object file
+LogStream.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.o
+.PHONY : LogStream.cpp.o
+
+LogStream.i: LogStream.cpp.i
+
+.PHONY : LogStream.i
+
+# target to preprocess a source file
+LogStream.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.i
+.PHONY : LogStream.cpp.i
+
+LogStream.s: LogStream.cpp.s
+
+.PHONY : LogStream.s
+
+# target to generate assembly for a file
+LogStream.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/LogStream.cpp.s
+.PHONY : LogStream.cpp.s
+
+Logging.o: Logging.cpp.o
+
+.PHONY : Logging.o
+
+# target to build an object file
+Logging.cpp.o:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.o
+.PHONY : Logging.cpp.o
+
+Logging.i: Logging.cpp.i
+
+.PHONY : Logging.i
+
+# target to preprocess a source file
+Logging.cpp.i:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.i
+.PHONY : Logging.cpp.i
+
+Logging.s: Logging.cpp.s
+
+.PHONY : Logging.s
+
+# target to generate assembly for a file
+Logging.cpp.s:
+	cd /Users/hymanzhou/CLionProjects/StaticWebServer/cmake-build-debug && $(MAKE) -f StaticWebServer/base/CMakeFiles/libserver_base.dir/build.make StaticWebServer/base/CMakeFiles/libserver_base.dir/Logging.cpp.s
+.PHONY : Logging.cpp.s
 
 Thread.o: Thread.cpp.o
 
@@ -238,9 +373,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... libserver_base"
+	@echo "... AsyncLogging.o"
+	@echo "... AsyncLogging.i"
+	@echo "... AsyncLogging.s"
 	@echo "... CountDownLatch.o"
 	@echo "... CountDownLatch.i"
 	@echo "... CountDownLatch.s"
+	@echo "... FileUtil.o"
+	@echo "... FileUtil.i"
+	@echo "... FileUtil.s"
+	@echo "... LogFile.o"
+	@echo "... LogFile.i"
+	@echo "... LogFile.s"
+	@echo "... LogStream.o"
+	@echo "... LogStream.i"
+	@echo "... LogStream.s"
+	@echo "... Logging.o"
+	@echo "... Logging.i"
+	@echo "... Logging.s"
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
